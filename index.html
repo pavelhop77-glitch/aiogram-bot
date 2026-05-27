@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Кликер 🚀</title>
+    <style>
+        body {
+            background: black;
+            color: white;
+            text-align: center;
+            font-family: Arial;
+        }
+
+        button {
+            padding: 20px;
+            font-size: 20px;
+            background: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Жми кнопку 💰</h1>
+    <h2 id="count">0</h2>
+
+    <button onclick="clickMe()">Кликни меня</button>
+
+    <script>
+        let count = 0;
+
+        function clickMe() {
+            count = count + 1;
+            document.getElementById("count").innerText = count;
+        }
+    </script>
+
+</body>
+</html>
